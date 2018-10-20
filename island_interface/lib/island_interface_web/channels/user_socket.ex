@@ -1,6 +1,8 @@
 defmodule IslandInterfaceWeb.UserSocket do
   use Phoenix.Socket
 
+  channel "game:*", IslandsInterfaceWeb.GameChannel
+
   ## Channels
   # channel "room:*", IslandInterfaceWeb.RoomChannel
 
